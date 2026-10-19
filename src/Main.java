@@ -79,5 +79,12 @@ public class Main {
         } else {
             System.out.println("Observação: " + visita.observacao);
         }
+    
+        ProximaAcao acao = new ProximaAcao();
+        System.out.println("Status: " + acao.status);
+        acao.prioridade = Prioridade.ALTA;
+        System.out.println("Prioridade: " + acao.prioridade);
+        
+        acao.descricao = "Ligar para Maria e enviar catálogo.";
     }
 }

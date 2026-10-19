@@ -8,6 +8,8 @@ public class ProximaAcao {
     StatusAcao status;
     Visita visita;
 
+
+
     public void validarProximaAcao () {
         if ((descricao == null ) || (descricao.isBlank())) {
             throw new IllegalArgumentException ("Preencha a descrição.");
@@ -24,5 +26,10 @@ public class ProximaAcao {
         if (visita == null) {
             throw new IllegalArgumentException ("Identifique a visita.");
         }
+    
+    
     }
+    public ProximaAcao() {
+    }
+
 }
